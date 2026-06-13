@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Punjab Tourism Explorer</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+<div class="container">
+<a class="navbar-brand" href="#">Punjab Tourism Explorer</a>
+</div>
+</nav>
+
+<section class="hero">
+<div class="hero-content">
+<h1>Welcome To Punjab</h1>
+<p>Explore History, Culture & Tourism</p>
+<button onclick="toggleDarkMode()" class="btn btn-dark">
+Dark Mode
+</button>
+</div>
+</section>
+
+<div class="container mt-4">
+
+<input
+type="text"
+id="searchBox"
+class="form-control"
+placeholder="Search Place..."
+onkeyup="searchPlaces()">
+
+</div>
+
+<section class="container py-5">
+
+<div class="row g-4">
+
+<div class="col-md-4 place-card">
+<div class="card">
+<div class="card-body">
+<h5>Golden Temple</h5>
+<p>Amritsar</p>
+<a target="_blank"
+href="https://maps.google.com/?q=Golden+Temple+Amritsar"
+class="btn btn-success">
+Open Map
+</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-4 place-card">
+<div class="card">
+<div class="card-body">
+<h5>Jallianwala Bagh</h5>
+<p>Amritsar</p>
+<a target="_blank"
+href="https://maps.google.com/?q=Jallianwala+Bagh+Amritsar"
+class="btn btn-success">
+Open Map
+</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-4 place-card">
+<div class="card">
+<div class="card-body">
+<h5>Wagah Border</h5>
+<p>Amritsar</p>
+<a target="_blank"
+href="https://maps.google.com/?q=Wagah+Border"
+class="btn btn-success">
+Open Map
+</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-4 place-card">
+<div class="card">
+<div class="card-body">
+<h5>Gobindgarh Fort</h5>
+<p>Historical Place</p>
+<a target="_blank"
+href="https://maps.google.com/?q=Gobindgarh+Fort+Amritsar"
+class="btn btn-success">
+Open Map
+</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-4 place-card">
+<div class="card">
+<div class="card-body">
+<h5>Harike Wetland</h5>
+<p>Picnic Spot</p>
+<a target="_blank"
+href="https://maps.google.com/?q=Harike+Wetland"
+class="btn btn-success">
+Open Map
+</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-4 place-card">
+<div class="card">
+<div class="card-body">
+<h5>Science City</h5>
+<p>Kapurthala</p>
+<a target="_blank"
+href="https://maps.google.com/?q=Pushpa+Gujral+Science+City"
+class="btn btn-success">
+Open Map
+</a>
+</div>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="container py-5">
+
+<h2>Punjabi Food</h2>
+
+<ul>
+<li>Sarson Da Saag</li>
+<li>Makki Di Roti</li>
+<li>Lassi</li>
+<li>Amritsari Kulcha</li>
+</ul>
+
+</section>
+
+<section class="container py-5">
+
+<h2>Festivals</h2>
+
+<ul>
+<li>Lohri</li>
+<li>Baisakhi</li>
+<li>Gurpurab</li>
+</ul>
+
+</section>
+
+<footer>
+Punjab Tourism Explorer © 2026
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
