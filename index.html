@@ -1,165 +1,1574 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Punjab Tourism Explorer</title>
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Punjab Tourism Explorer
+</title>
+
+<link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+rel="stylesheet">
+
+<link
+rel="stylesheet"
+href="style.css">
+
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
 </head>
 
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+<!--======================
+        NAVBAR
+=======================-->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top">
+
 <div class="container">
-<a class="navbar-brand" href="#">Punjab Tourism Explorer</a>
+
+<a class="navbar-brand fw-bold" href="#">
+
+<i class="fa-solid fa-map-location-dot"></i>
+
+Punjab Tourism Explorer
+
+</a>
+
+<button
+class="navbar-toggler"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#menu">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div
+class="collapse navbar-collapse"
+id="menu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="#home">
+Home
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#about">
+About
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#places">
+Places
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#food">
+Food
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#festival">
+Festivals
+</a>
+</li>
+
+</ul>
+
+<button
+class="btn btn-warning ms-3"
+onclick="toggleDarkMode()">
+
+Dark Mode
+
+</button>
+
 </div>
+
+</div>
+
 </nav>
 
-<section class="hero">
-<div class="hero-content">
-<h1>Welcome To Punjab</h1>
-<p>Explore History, Culture & Tourism</p>
-<button onclick="toggleDarkMode()" class="btn btn-dark">
-Dark Mode
-</button>
+<!--======================
+      HERO SECTION
+=======================-->
+
+<section
+id="home"
+class="hero">
+
+<div class="overlay">
+
+<div class="container text-center">
+
+<h1>
+
+Explore The Beauty Of Punjab
+
+</h1>
+
+<p>
+
+History • Heritage • Food • Culture • Nature
+
+</p>
+
+<a
+href="#places"
+class="btn btn-success btn-lg">
+
+Explore Now
+
+</a>
+
 </div>
+
+</div>
+
 </section>
 
-<div class="container mt-4">
+<!--======================
+      ABOUT SECTION
+=======================-->
 
-<input
-type="text"
-id="searchBox"
-class="form-control"
-placeholder="Search Place..."
-onkeyup="searchPlaces()">
+<section
+id="about"
+class="container py-5">
+
+<div class="row">
+
+<div class="col-lg-6">
+
+<h2>
+
+About Punjab
+
+</h2>
+
+<p>
+
+Punjab is known as the
+Land of Five Rivers.
+
+It is famous for
+
+• Golden Temple
+
+• Sikh Heritage
+
+• Historical Forts
+
+• Festivals
+
+• Delicious Food
+
+• Beautiful Picnic Spots
+
+• Brave Warriors
+
+• Rich Culture
+
+</p>
 
 </div>
 
-<section class="container py-5">
+</div>
+
+</section>
+
+<!--======================
+      SEARCH BAR
+=======================-->
+
+<section class="container mb-5">
+
+<input
+
+type="text"
+
+id="searchBox"
+
+class="form-control"
+
+placeholder="Search Tourist Places..."
+
+onkeyup="searchPlaces()">
+
+</section>
+
+<!--======================
+      CATEGORY BUTTONS
+=======================-->
+
+<section class="container mb-5">
+
+<div class="text-center">
+
+<button class="btn btn-success m-2">
+
+Historical
+
+</button>
+
+<button class="btn btn-primary m-2">
+
+Religious
+
+</button>
+
+<button class="btn btn-warning m-2">
+
+Warriors
+
+</button>
+
+<button class="btn btn-danger m-2">
+
+Picnic
+
+</button>
+
+<button class="btn btn-dark m-2">
+
+Nature
+
+</button>
+
+</div>
+
+</section>
+
+<!--======================
+ TOURIST PLACES START
+=======================-->
+
+<section
+id="places"
+class="container">
+
+<h2 class="text-center mb-5">
+
+Top Tourist Attractions
+
+</h2>
 
 <div class="row g-4">
 
-<div class="col-md-4 place-card">
-<div class="card">
+    <!-- Golden Temple -->
+
+<div class="col-lg-4 col-md-6 place-card">
+
+<div class="card h-100 shadow">
+
+<img
+src="golden-temple.jpg"
+class="card-img-top"
+alt="Golden Temple">
+
 <div class="card-body">
-<h5>Golden Temple</h5>
-<p>Amritsar</p>
-<a target="_blank"
+
+<h4>Golden Temple</h4>
+
+<p>
+The holiest Sikh shrine located in Amritsar.
+</p>
+
+<a
 href="https://maps.google.com/?q=Golden+Temple+Amritsar"
+target="_blank"
 class="btn btn-success">
-Open Map
+
+View on Map
+
 </a>
-</div>
-</div>
+
 </div>
 
-<div class="col-md-4 place-card">
-<div class="card">
+</div>
+
+</div>
+
+<!-- Jallianwala Bagh -->
+
+<div class="col-lg-4 col-md-6 place-card">
+
+<div class="card h-100 shadow">
+
+<img
+src="jallianwala.jpg"
+class="card-img-top">
+
 <div class="card-body">
-<h5>Jallianwala Bagh</h5>
-<p>Amritsar</p>
-<a target="_blank"
+
+<h4>Jallianwala Bagh</h4>
+
+<p>
+Historic memorial of the 1919 massacre.
+</p>
+
+<a
 href="https://maps.google.com/?q=Jallianwala+Bagh+Amritsar"
+target="_blank"
 class="btn btn-success">
-Open Map
+
+View on Map
+
 </a>
-</div>
-</div>
+
 </div>
 
-<div class="col-md-4 place-card">
-<div class="card">
+</div>
+
+</div>
+
+<!-- Wagah Border -->
+
+<div class="col-lg-4 col-md-6 place-card">
+
+<div class="card h-100 shadow">
+
+<img
+src="wagah.jpg"
+class="card-img-top">
+
 <div class="card-body">
-<h5>Wagah Border</h5>
-<p>Amritsar</p>
-<a target="_blank"
+
+<h4>Wagah Border</h4>
+
+<p>
+Watch the famous India–Pakistan retreat ceremony.
+</p>
+
+<a
 href="https://maps.google.com/?q=Wagah+Border"
+target="_blank"
 class="btn btn-success">
-Open Map
+
+View on Map
+
 </a>
-</div>
-</div>
+
 </div>
 
-<div class="col-md-4 place-card">
-<div class="card">
+</div>
+
+</div>
+
+<!-- Virasat-e-Khalsa -->
+
+<div class="col-lg-4 col-md-6 place-card">
+
+<div class="card h-100 shadow">
+
+<img
+src="virasat.jpg"
+class="card-img-top">
+
 <div class="card-body">
-<h5>Gobindgarh Fort</h5>
-<p>Historical Place</p>
-<a target="_blank"
+
+<h4>Virasat-e-Khalsa</h4>
+
+<p>
+A world-famous museum dedicated to Sikh history.
+</p>
+
+<a
+href="https://maps.google.com/?q=Virasat-e-Khalsa+Anandpur+Sahib"
+target="_blank"
+class="btn btn-success">
+
+View on Map
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Gobindgarh Fort -->
+
+<div class="col-lg-4 col-md-6 place-card">
+
+<div class="card h-100 shadow">
+
+<img
+src="gobindgarh.jpg"
+class="card-img-top">
+
+<div class="card-body">
+
+<h4>Gobindgarh Fort</h4>
+
+<p>
+Historic fort showcasing Punjab's military heritage.
+</p>
+
+<a
 href="https://maps.google.com/?q=Gobindgarh+Fort+Amritsar"
+target="_blank"
 class="btn btn-success">
-Open Map
+
+View on Map
+
 </a>
-</div>
-</div>
+
 </div>
 
-<div class="col-md-4 place-card">
-<div class="card">
+</div>
+
+</div>
+
+<!-- Fateh Burj -->
+
+<div class="col-lg-4 col-md-6 place-card">
+
+<div class="card h-100 shadow">
+
+<img
+src="fatehburj.jpg"
+class="card-img-top">
+
 <div class="card-body">
-<h5>Harike Wetland</h5>
-<p>Picnic Spot</p>
-<a target="_blank"
+
+<h4>Fateh Burj</h4>
+
+<p>
+India's tallest victory tower at Chappar Chiri.
+</p>
+
+<a
+href="https://maps.google.com/?q=Fateh+Burj+Chappar+Chiri"
+target="_blank"
+class="btn btn-success">
+
+View on Map
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Harike Wetland -->
+
+<div class="col-lg-4 col-md-6 place-card">
+
+<div class="card h-100 shadow">
+
+<img
+src="harike.jpg"
+class="card-img-top">
+
+<div class="card-body">
+
+<h4>Harike Wetland</h4>
+
+<p>
+Perfect destination for bird watching and nature lovers.
+</p>
+
+<a
 href="https://maps.google.com/?q=Harike+Wetland"
+target="_blank"
 class="btn btn-success">
-Open Map
+
+View on Map
+
 </a>
-</div>
-</div>
+
 </div>
 
-<div class="col-md-4 place-card">
-<div class="card">
+</div>
+
+</div>
+
+<!-- Science City -->
+
+<div class="col-lg-4 col-md-6 place-card">
+
+<div class="card h-100 shadow">
+
+<img
+src="sciencecity.jpg"
+class="card-img-top">
+
 <div class="card-body">
-<h5>Science City</h5>
-<p>Kapurthala</p>
-<a target="_blank"
+
+<h4>Pushpa Gujral Science City</h4>
+
+<p>
+One of India's largest science museums.
+</p>
+
+<a
 href="https://maps.google.com/?q=Pushpa+Gujral+Science+City"
+target="_blank"
 class="btn btn-success">
-Open Map
+
+View on Map
+
 </a>
+
 </div>
+
 </div>
+
+</div>
+
+<!-- Qila Mubarak -->
+
+<div class="col-lg-4 col-md-6 place-card">
+
+<div class="card h-100 shadow">
+
+<img
+src="qilamubarak.jpg"
+class="card-img-top">
+
+<div class="card-body">
+
+<h4>Qila Mubarak</h4>
+
+<p>
+One of the oldest surviving forts in India.
+</p>
+
+<a
+href="https://maps.google.com/?q=Qila+Mubarak+Bathinda"
+target="_blank"
+class="btn btn-success">
+
+View on Map
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- Durgiana Temple -->
+
+<div class="col-lg-4 col-md-6 place-card">
+
+<div class="card h-100 shadow">
+
+<img src="durgiana.jpg"
+class="card-img-top"
+alt="Durgiana Temple">
+
+<div class="card-body">
+
+<h4>Durgiana Temple</h4>
+
+<p>
+Beautiful Hindu temple in Amritsar.
+</p>
+
+<a
+href="https://maps.google.com/?q=Durgiana+Temple+Amritsar"
+target="_blank"
+class="btn btn-success">
+
+View on Map
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Anandpur Sahib -->
+
+<div class="col-lg-4 col-md-6 place-card">
+
+<div class="card h-100 shadow">
+
+<img src="anandpur.jpg"
+class="card-img-top">
+
+<div class="card-body">
+
+<h4>Anandpur Sahib</h4>
+
+<p>
+Birthplace of the Khalsa Panth.
+</p>
+
+<a
+href="https://maps.google.com/?q=Anandpur+Sahib"
+target="_blank"
+class="btn btn-success">
+
+View on Map
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Takht Sri Kesgarh Sahib -->
+
+<div class="col-lg-4 col-md-6 place-card">
+
+<div class="card h-100 shadow">
+
+<img src="kesgarh.jpg"
+class="card-img-top">
+
+<div class="card-body">
+
+<h4>Takht Sri Kesgarh Sahib</h4>
+
+<p>
+One of the five Takhts of Sikhism.
+</p>
+
+<a
+href="https://maps.google.com/?q=Takht+Sri+Kesgarh+Sahib"
+target="_blank"
+class="btn btn-success">
+
+View on Map
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Rose Garden -->
+
+<div class="col-lg-4 col-md-6 place-card">
+
+<div class="card h-100 shadow">
+
+<img src="rosegarden.jpg"
+class="card-img-top">
+
+<div class="card-body">
+
+<h4>Nehru Rose Garden</h4>
+
+<p>
+Popular picnic destination in Ludhiana.
+</p>
+
+<a
+href="https://maps.google.com/?q=Nehru+Rose+Garden+Ludhiana"
+target="_blank"
+class="btn btn-success">
+
+View on Map
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Ranjit Sagar Dam -->
+
+<div class="col-lg-4 col-md-6 place-card">
+
+<div class="card h-100 shadow">
+
+<img src="ranjitsagar.jpg"
+class="card-img-top">
+
+<div class="card-body">
+
+<h4>Ranjit Sagar Dam</h4>
+
+<p>
+Scenic lake and nature destination.
+</p>
+
+<a
+href="https://maps.google.com/?q=Ranjit+Sagar+Dam"
+target="_blank"
+class="btn btn-success">
+
+View on Map
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Hardy's World -->
+
+<div class="col-lg-4 col-md-6 place-card">
+
+<div class="card h-100 shadow">
+
+<img src="hardysworld.jpg"
+class="card-img-top">
+
+<div class="card-body">
+
+<h4>Hardy's World</h4>
+
+<p>
+One of Punjab's biggest amusement parks.
+</p>
+
+<a
+href="https://maps.google.com/?q=Hardys+World+Ludhiana"
+target="_blank"
+class="btn btn-success">
+
+View on Map
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Aam Khas Bagh -->
+
+<div class="col-lg-4 col-md-6 place-card">
+
+<div class="card h-100 shadow">
+
+<img src="aamkhasbagh.jpg"
+class="card-img-top">
+
+<div class="card-body">
+
+<h4>Aam Khas Bagh</h4>
+
+<p>
+Historic Mughal garden at Sirhind.
+</p>
+
+<a
+href="https://maps.google.com/?q=Aam+Khas+Bagh+Sirhind"
+target="_blank"
+class="btn btn-success">
+
+View on Map
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Khatkar Kalan -->
+
+<div class="col-lg-4 col-md-6 place-card">
+
+<div class="card h-100 shadow">
+
+<img src="bhagatsingh.jpg"
+class="card-img-top">
+
+<div class="card-body">
+
+<h4>Shaheed Bhagat Singh Memorial</h4>
+
+<p>
+Birthplace and memorial of Shaheed Bhagat Singh.
+</p>
+
+<a
+href="https://maps.google.com/?q=Khatkar+Kalan"
+target="_blank"
+class="btn btn-success">
+
+View on Map
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Thunder Zone -->
+
+<div class="col-lg-4 col-md-6 place-card">
+
+<div class="card h-100 shadow">
+
+<img src="thunderzone.jpg"
+class="card-img-top">
+
+<div class="card-body">
+
+<h4>Thunder Zone</h4>
+
+<p>
+Popular family water park in Mohali.
+</p>
+
+<a
+href="https://maps.google.com/?q=Thunder+Zone+Mohali"
+target="_blank"
+class="btn btn-success">
+
+View on Map
+
+</a>
+
+</div>
+
 </div>
 
 </div>
 
 </section>
+
+<!--=========================
+      FOOD SECTION
+==========================-->
+
+<section id="food" class="container py-5">
+
+<h2 class="text-center mb-5">
+Famous Punjabi Food
+</h2>
+
+<div class="row g-4">
+
+<!-- Sarson Da Saag -->
+
+<div class="col-lg-4 col-md-6">
+
+<div class="card h-100 shadow">
+
+<img
+src="sarson-saag.jpg"
+class="card-img-top"
+alt="Sarson Da Saag">
+
+<div class="card-body">
+
+<h4>Sarson Da Saag</h4>
+
+<p>
+
+Traditional Punjabi dish served with
+Makki Di Roti and white butter.
+
+</p>
+
+<span class="badge bg-success">
+Must Try
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Makki Di Roti -->
+
+<div class="col-lg-4 col-md-6">
+
+<div class="card h-100 shadow">
+
+<img
+src="makki-roti.jpg"
+class="card-img-top">
+
+<div class="card-body">
+
+<h4>Makki Di Roti</h4>
+
+<p>
+
+Served hot with Sarson Da Saag.
+
+</p>
+
+<span class="badge bg-warning">
+Traditional
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Amritsari Kulcha -->
+
+<div class="col-lg-4 col-md-6">
+
+<div class="card h-100 shadow">
+
+<img
+src="kulcha.jpg"
+class="card-img-top">
+
+<div class="card-body">
+
+<h4>Amritsari Kulcha</h4>
+
+<p>
+
+Stuffed crispy kulcha served with chole.
+
+</p>
+
+<span class="badge bg-danger">
+Popular
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Lassi -->
+
+<div class="col-lg-4 col-md-6">
+
+<div class="card h-100 shadow">
+
+<img
+src="lassi.jpg"
+class="card-img-top">
+
+<div class="card-body">
+
+<h4>Punjabi Lassi</h4>
+
+<p>
+
+Refreshing traditional yogurt drink.
+
+</p>
+
+<span class="badge bg-primary">
+Famous Drink
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Chole Bhature -->
+
+<div class="col-lg-4 col-md-6">
+
+<div class="card h-100 shadow">
+
+<img
+src="chole.jpg"
+class="card-img-top">
+
+<div class="card-body">
+
+<h4>Chole Bhature</h4>
+
+<p>
+
+One of Punjab's most loved meals.
+
+</p>
+
+<span class="badge bg-success">
+Best Seller
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Pinni -->
+
+<div class="col-lg-4 col-md-6">
+
+<div class="card h-100 shadow">
+
+<img
+src="pinni.jpg"
+class="card-img-top">
+
+<div class="card-body">
+
+<h4>Pinni</h4>
+
+<p>
+
+Traditional Punjabi winter sweet.
+
+</p>
+
+<span class="badge bg-dark">
+Sweet Dish
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!--=========================
+      FESTIVAL SECTION
+==========================-->
+
+<section id="festival" class="container py-5">
+
+<div class="text-center mb-5">
+
+<h2>Festivals of Punjab</h2>
+
+<p>
+Experience the vibrant culture and traditions of Punjab.
+</p>
+
+</div>
+
+<div class="row g-4">
+
+<!-- Baisakhi -->
+
+<div class="col-lg-4 col-md-6">
+
+<div class="card h-100 shadow">
+
+<img
+src="baisakhi.jpg"
+class="card-img-top"
+alt="Baisakhi">
+
+<div class="card-body">
+
+<h4>Baisakhi</h4>
+
+<p>
+
+Celebrated every April to mark the harvest season and the birth of the Khalsa.
+
+</p>
+
+<span class="badge bg-success">
+April
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Lohri -->
+
+<div class="col-lg-4 col-md-6">
+
+<div class="card h-100 shadow">
+
+<img
+src="lohri.jpg"
+class="card-img-top"
+alt="Lohri">
+
+<div class="card-body">
+
+<h4>Lohri</h4>
+
+<p>
+
+Festival celebrated with bonfires, music and traditional dances.
+
+</p>
+
+<span class="badge bg-danger">
+January
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Hola Mohalla -->
+
+<div class="col-lg-4 col-md-6">
+
+<div class="card h-100 shadow">
+
+<img
+src="hola.jpg"
+class="card-img-top"
+alt="Hola Mohalla">
+
+<div class="card-body">
+
+<h4>Hola Mohalla</h4>
+
+<p>
+
+Martial arts festival celebrated at Anandpur Sahib.
+
+</p>
+
+<span class="badge bg-warning text-dark">
+March
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Gurpurab -->
+
+<div class="col-lg-4 col-md-6">
+
+<div class="card h-100 shadow">
+
+<img
+src="gurpurab.jpg"
+class="card-img-top"
+alt="Gurpurab">
+
+<div class="card-body">
+
+<h4>Gurpurab</h4>
+
+<p>
+
+Celebration of the birth anniversaries of Sikh Gurus.
+
+</p>
+
+<span class="badge bg-primary">
+Religious
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Basant Festival -->
+
+<div class="col-lg-4 col-md-6">
+
+<div class="card h-100 shadow">
+
+<img
+src="basant.jpg"
+class="card-img-top"
+alt="Basant Festival">
+
+<div class="card-body">
+
+<h4>Basant Festival</h4>
+
+<p>
+
+Known for colorful kite flying and joyful celebrations.
+
+</p>
+
+<span class="badge bg-info text-dark">
+Spring
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Teeyan -->
+
+<div class="col-lg-4 col-md-6">
+
+<div class="card h-100 shadow">
+
+<img
+src="teeyan.jpg"
+class="card-img-top"
+alt="Teeyan">
+
+<div class="card-body">
+
+<h4>Teeyan</h4>
+
+<p>
+
+Traditional Punjabi festival celebrated by women with songs and dances.
+
+</p>
+
+<span class="badge bg-secondary">
+Monsoon
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!--=========================
+      HOTELS SECTION
+==========================-->
+
+<section id="hotels" class="container py-5">
+
+<div class="text-center mb-5">
+
+<h2>Best Hotels in Punjab</h2>
+
+<p>Comfortable stays for every traveler.</p>
+
+</div>
+
+<div class="row g-4">
+
+<div class="col-lg-4 col-md-6">
+
+<div class="card h-100 shadow">
+
+<img src="taj-amritsar.jpg" class="card-img-top">
+
+<div class="card-body">
+
+<h4>Taj Swarna</h4>
+
+<p>Luxury 5-Star Hotel in Amritsar.</p>
+
+<a href="https://maps.google.com/?q=Taj+Swarna+Amritsar"
+target="_blank"
+class="btn btn-success">
+
+Location
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-lg-4 col-md-6">
+
+<div class="card h-100 shadow">
+
+<img src="hyatt.jpg" class="card-img-top">
+
+<div class="card-body">
+
+<h4>Hyatt Regency</h4>
+
+<p>Premium Hotel with modern facilities.</p>
+
+<a href="https://maps.google.com/?q=Hyatt+Regency+Ludhiana"
+target="_blank"
+class="btn btn-success">
+
+Location
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-lg-4 col-md-6">
+
+<div class="card h-100 shadow">
+
+<img src="parkplaza.jpg" class="card-img-top">
+
+<div class="card-body">
+
+<h4>Park Plaza</h4>
+
+<p>Popular hotel in Ludhiana.</p>
+
+<a href="https://maps.google.com/?q=Park+Plaza+Ludhiana"
+target="_blank"
+class="btn btn-success">
+
+Location
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!--=========================
+      SHOPPING
+==========================-->
 
 <section class="container py-5">
 
-<h2>Punjabi Food</h2>
+<div class="text-center mb-5">
 
-<ul>
-<li>Sarson Da Saag</li>
-<li>Makki Di Roti</li>
-<li>Lassi</li>
-<li>Amritsari Kulcha</li>
-</ul>
+<h2>Shopping Destinations</h2>
+
+</div>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+
+<div class="card shadow">
+
+<div class="card-body">
+
+<h4>Hall Bazaar</h4>
+
+<p>Traditional Punjabi shopping market in Amritsar.</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card shadow">
+
+<div class="card-body">
+
+<h4>Omaxe Mall</h4>
+
+<p>Modern shopping mall in Patiala.</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card shadow">
+
+<div class="card-body">
+
+<h4>Pavilion Mall</h4>
+
+<p>One of Ludhiana's biggest malls.</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
 
 </section>
+
+<!--=========================
+      TRAVEL TIPS
+==========================-->
 
 <section class="container py-5">
 
-<h2>Festivals</h2>
+<h2 class="text-center mb-4">
 
-<ul>
-<li>Lohri</li>
-<li>Baisakhi</li>
-<li>Gurpurab</li>
+Travel Tips
+
+</h2>
+
+<div class="row">
+
+<div class="col-md-6">
+
+<ul class="list-group">
+
+<li class="list-group-item">
+Carry your ID proof.
+</li>
+
+<li class="list-group-item">
+Wear comfortable shoes.
+</li>
+
+<li class="list-group-item">
+Respect religious places.
+</li>
+
+<li class="list-group-item">
+Try authentic Punjabi food.
+</li>
+
+<li class="list-group-item">
+Keep drinking water with you.
+</li>
+
 </ul>
+
+</div>
+
+<div class="col-md-6">
+
+<img
+src="travel-tips.jpg"
+class="img-fluid rounded shadow">
+
+</div>
+
+</div>
 
 </section>
 
-<footer>
-Punjab Tourism Explorer © 2026
+<!--=========================
+      BEST TIME
+==========================-->
+
+<section class="container py-5">
+
+<div class="alert alert-success text-center">
+
+<h3>
+
+Best Time To Visit Punjab
+
+</h3>
+
+<p>
+
+October to March offers pleasant weather for sightseeing.
+
+</p>
+
+</div>
+
+</section>
+
+<!--=========================
+      FOOTER
+==========================-->
+
+<footer class="bg-dark text-white py-5">
+
+<div class="container text-center">
+
+<h3>Punjab Tourism Explorer</h3>
+
+<p>
+
+Explore the Culture, Heritage, Food and Beauty of Punjab.
+
+</p>
+
+<div class="mt-3">
+
+<a href="#" class="text-white me-3">
+<i class="fab fa-facebook fa-2x"></i>
+</a>
+
+<a href="#" class="text-white me-3">
+<i class="fab fa-instagram fa-2x"></i>
+</a>
+
+<a href="#" class="text-white me-3">
+<i class="fab fa-youtube fa-2x"></i>
+</a>
+
+<a href="#" class="text-white">
+<i class="fab fa-github fa-2x"></i>
+</a>
+
+</div>
+
+<hr>
+
+<p>
+
+© 2026 Punjab Tourism Explorer
+
+</p>
+
+</div>
+
 </footer>
+
+<button
+id="topBtn"
+onclick="topFunction()">
+
+↑
+
+</button>
 
 <script src="script.js"></script>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
+
 </html>

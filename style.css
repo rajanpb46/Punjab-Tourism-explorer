@@ -1,44 +1,555 @@
-body{
-background:#f4f4f4;
-font-family:Arial,sans-serif;
+/*==========================
+        GOOGLE FONT
+===========================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
 }
+
+body{
+background:#f8f9fa;
+color:#222;
+overflow-x:hidden;
+transition:.4s;
+}
+
+/*==========================
+        NAVBAR
+===========================*/
+
+.navbar{
+
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+}
+
+.navbar-brand{
+
+font-size:28px;
+font-weight:700;
+
+}
+
+.nav-link{
+
+font-size:17px;
+margin-left:12px;
+transition:.3s;
+
+}
+
+.nav-link:hover{
+
+color:#FFD54F !important;
+
+}
+
+/*==========================
+        HERO
+===========================*/
 
 .hero{
-height:60vh;
-background:#198754;
-color:white;
+
+height:100vh;
+
+background:
+
+linear-gradient(rgba(0,0,0,.55),
+rgba(0,0,0,.55)),
+
+url("images/hero/punjab.jpg");
+
+background-size:cover;
+
+background-position:center;
+
 display:flex;
-justify-content:center;
+
 align-items:center;
+
+justify-content:center;
+
 text-align:center;
+
+color:white;
+
 }
 
-.hero-content h1{
-font-size:50px;
+.hero h1{
+
+font-size:65px;
+
+font-weight:700;
+
+margin-bottom:20px;
+
 }
+
+.hero p{
+
+font-size:24px;
+
+margin-bottom:30px;
+
+}
+
+.hero .btn{
+
+padding:14px 35px;
+
+font-size:20px;
+
+border-radius:40px;
+
+}
+
+/*==========================
+        SECTION TITLE
+===========================*/
+
+section{
+
+padding-top:80px;
+
+padding-bottom:80px;
+
+}
+
+section h2{
+
+font-size:42px;
+
+font-weight:700;
+
+margin-bottom:20px;
+
+color:#198754;
+
+text-align:center;
+
+}
+
+section p{
+
+font-size:17px;
+
+line-height:1.8;
+
+}
+
+/*==========================
+        ABOUT
+===========================*/
+
+#about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#about p{
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+}
+
+
+.about-box{
+
+background:white;
+
+padding:30px;
+
+border-radius:30px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.about-box ul{
+
+padding-left:20px;
+
+}
+
+.about-box li{
+
+margin-bottom:12px;
+
+font-size:17px;
+
+}
+
+/*==========================
+        SEARCH
+===========================*/
+
+#searchBox{
+
+padding:15px;
+
+font-size:18px;
+
+border-radius:50px;
+
+border:2px solid #198754;
+
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+#searchBox:focus{
+
+outline:none;
+
+box-shadow:0 0 15px rgba(25,135,84,.35);
+
+}
+/*==========================
+        CARDS
+===========================*/
 
 .card{
-box-shadow:0 2px 10px rgba(0,0,0,0.2);
-transition:.3s;
+
+border:none;
+
+border-radius:20px;
+
+overflow:hidden;
+
+transition:.4s;
+
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+background:#fff;
+
 }
 
 .card:hover{
-transform:translateY(-8px);
+
+transform:translateY(-12px);
+
+box-shadow:0 18px 40px rgba(0,0,0,.18);
+
 }
+
+.card-img-top{
+
+height:250px;
+
+object-fit:cover;
+
+transition:.5s;
+
+}
+
+.card:hover .card-img-top{
+
+transform:scale(1.08);
+
+}
+
+.card-body{
+
+padding:25px;
+
+}
+
+.card h4{
+
+font-size:24px;
+
+font-weight:600;
+
+margin-bottom:12px;
+
+color:#198754;
+
+}
+
+.card p{
+
+font-size:16px;
+
+color:#555;
+
+line-height:1.7;
+
+}
+
+/*==========================
+        BUTTONS
+===========================*/
+
+.btn{
+
+border-radius:30px;
+
+padding:10px 22px;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.btn-success:hover{
+
+transform:translateY(-3px);
+
+}
+
+/*==========================
+        BADGES
+===========================*/
+
+.badge{
+
+padding:8px 14px;
+
+font-size:14px;
+
+border-radius:20px;
+
+}
+
+/*==========================
+        FOOD
+===========================*/
+
+#food .card{
+
+background:#fffdf8;
+
+}
+
+/*==========================
+      FESTIVAL
+===========================*/
+
+#festival .card{
+
+background:#fffaf3;
+
+}
+
+/*==========================
+      HOTELS
+===========================*/
+
+#hotels .card{
+
+background:#f9fcff;
+
+}
+
+/*==========================
+        FOOTER
+===========================*/
 
 footer{
-background:#222;
-color:white;
+
+background:#111;
+
+color:#fff;
+
 text-align:center;
-padding:20px;
+
+padding:50px 20px;
+
 }
 
-.dark-mode{
-background:#121212;
+footer h3{
+
+font-size:32px;
+
+margin-bottom:20px;
+
+}
+
+footer a{
+
 color:white;
+
+margin:10px;
+
+transition:.3s;
+
+}
+
+footer a:hover{
+
+color:#FFD54F;
+
+}
+
+/*==========================
+      BACK TO TOP
+===========================*/
+
+#topBtn{
+
+position:fixed;
+
+bottom:25px;
+
+right:25px;
+
+width:55px;
+
+height:55px;
+
+border:none;
+
+border-radius:50%;
+
+background:#198754;
+
+color:#fff;
+
+font-size:22px;
+
+cursor:pointer;
+
+display:none;
+
+box-shadow:0 5px 15px rgba(0,0,0,.3);
+
+transition:.3s;
+
+}
+
+#topBtn:hover{
+
+background:#146c43;
+
+transform:scale(1.1);
+
+}
+
+/*==========================
+      DARK MODE
+===========================*/
+
+.dark-mode{
+
+background:#121212;
+
+color:white;
+
 }
 
 .dark-mode .card{
-background:#222;
+
+background:#1f1f1f;
+
 color:white;
+
+}
+
+.dark-mode .card p{
+
+color:#ddd;
+
+}
+
+.dark-mode section h2{
+
+color:#6ee7a2;
+
+}
+
+.dark-mode .navbar{
+
+background:#0d0d0d !important;
+
+}
+
+/*==========================
+      RESPONSIVE
+===========================*/
+
+@media(max-width:992px){
+
+.hero h1{
+
+font-size:48px;
+
+}
+
+.hero p{
+
+font-size:20px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.hero{
+
+height:75vh;
+
+}
+
+.hero h1{
+
+font-size:36px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+}
+
+.card-img-top{
+
+height:220px;
+
+}
+
+section h2{
+
+font-size:32px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.hero h1{
+
+font-size:30px;
+
+}
+
+.hero p{
+
+font-size:16px;
+
+}
+
+.navbar-brand{
+
+font-size:22px;
+
+}
+
+.card-img-top{
+
+height:200px;
+
+}
+
 }
