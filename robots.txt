@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rajanpb46.github.io/Punjab-Tourism-explorer/sitemap.xml
